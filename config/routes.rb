@@ -5,5 +5,8 @@ Rails.application.routes.draw do
       get "top", to: "restaurants#top"
       get "bottom", to: "restaurants#bottom"
     end
+    member do
+      get "chef", to: "restaurants#chef"
+    end
   end
 end
