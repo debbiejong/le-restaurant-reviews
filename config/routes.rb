@@ -11,4 +11,8 @@ Rails.application.routes.draw do
     resources :reviews, only: [:new, :create]
   end
     resources :reviews, except: [:new, :create]
+
+  namespace :admin do
+    resources :restaurants, only: [:index]
+  end
 end

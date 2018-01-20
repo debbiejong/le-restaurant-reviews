@@ -5,6 +5,10 @@ class RestaurantsController < ApplicationController
     @restaurants = Restaurant.where(stars: 5)
   end
 
+  def bottom
+    @restaurants = Restaurant.where(stars: 1)
+  end
+
   def chef
   end
 

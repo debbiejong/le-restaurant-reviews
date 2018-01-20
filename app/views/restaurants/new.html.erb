@@ -1,5 +1,8 @@
-<h1>New Restaurant</h1>
+<div class="center">
+  <h1>New Restaurant</h1>
 
-<%= render 'form', restaurant: @restaurant %>
+  <%= render 'form', restaurant: @restaurant %>
+  <br>
+  <%= link_to 'Back to home', restaurants_path %>
 
-<%= link_to 'Back', restaurants_path %>
+</div>
